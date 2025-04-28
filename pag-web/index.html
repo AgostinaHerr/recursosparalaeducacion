@@ -8,50 +8,74 @@
      <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="contenido">
-    <header>
-        <!-- logo de la página -->
-        <img src="./medios/logo.jpg" alt="Logo de la marca">
-        <!-- menú navegable -->
-    <nav>
-        <ol>
-          <li><a href="./index.html">INICIO</a></li>
-          <li><a href="./page/lengua.html">LENGUA</a></li>
-          <li><a href="./page/matematica.html">MATEMÁTICA</a></li>
-          <li class="juegosonline"><a href="./page/juegos.html">JUEGOS ONLINE</a></li>
-          <li class="escribinos"><a href="./page/contacto.html">ESCRIBINOS</a></li>
-        </ol>  
-      </nav>
+  <body class="bg-light">
+
+    <header class="bg-primary text-white text-center py-3">
+      <div class="container">
+        <img src="./medios/logo.jpg" alt="Logo" class="img-fluid" style="max-width: 100px;">
+        <h1 class="h4 mt-2">Formación Docente</h1>
+      </div>
     </header>
-  </div>
-    <!-- Contenido principal -->
-    <main>
-
-      <div class="h1">    
-    <h1>FORMACIÓN DOCENTE</h1>
-    <img src="./medios/capacidadaprender-p.jpg" alt="Niños aprendiendo a trabajar.">
-    <p>Aprender a través del juego es fundamental, ya que permite a los niños desarrollar habilidades cognitivas, sociales y emocionales de manera natural y divertida. A través del juego, los niños exploran, resuelven problemas y experimentan diferentes roles, lo que fomenta su creatividad, pensamiento crítico y capacidad para trabajar en equipo. Además, al integrar el aprendizaje con la diversión, se aumenta la motivación y el interés por aprender, creando una experiencia educativa más efectiva y memorable.</p>
-  </div>  
-    
-      <div class="galeria">
-    <img src="./medios/niño-con-legos.jpg" alt="Niños jugando con legos.">
-    <img src="./medios/juegoadultosniños.jpg" alt="Niños y adultos jugando.">
-  </div>
   
-  </main>
-
-    <footer>
-        <!-- Coloco las imágenes para remplazar los íconos -->
-         <div class="iconos">
-         <img src="./medios/insta.jpg" alt="Instagram">
-         <img src="./medios/WP.png" alt="Whatsapp">
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./page/lengua.html">Lengua</a></li>
+            <li class="nav-item"><a class="nav-link" href="./page/matematica.html">Matemática</a></li>
+            <li class="nav-item"><a class="nav-link" href="./page/juegos.html">Juegos Online</a></li>
+            <li class="nav-item"><a class="nav-link" href="./page/contacto.html">Escribinos</a></li>
+          </ul>
         </div>
-
-        <div>
-         <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1">INSTAGRAM</a>
-         <a href="https://wa.me/3543534750">WHATSAPP</a>
+      </div>
+    </nav>
+  
+    <main class="container my-4">
+      <div class="text-center mb-4">
+        <h2 class="h5">Aprender Jugando</h2>
+        <img src="./medios/capacidadaprender-p.jpg" alt="Niños aprendiendo" class="img-fluid rounded">
+        <p class="mt-3">Aprender a través del juego permite a los niños desarrollar habilidades cognitivas, sociales y emocionales de manera natural y divertida.</p>
+      </div>
+  
+      <div class="row g-3">
+        <div class="col-12">
+          <div class="card">
+            <img src="./medios/niño-con-legos.jpg" class="card-img-top" alt="Niños con legos">
+            <div class="card-body">
+              <p class="card-text">Niños explorando su creatividad con bloques de construcción.</p>
+            </div>
+          </div>
         </div>
-        
+        <div class="col-12">
+          <div class="card">
+            <img src="./medios/juegoadultosniños.jpg" class="card-img-top" alt="Niños y adultos jugando">
+            <div class="card-body">
+              <p class="card-text">La interacción entre niños y adultos fortalece los vínculos y el aprendizaje.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="bg-primary text-white text-center py-3 mt-4">
+      <div class="container">
+        <div class="d-flex justify-content-center mb-2">
+          <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1" class="me-3">
+            <img src="./medios/insta.jpg" alt="Instagram" style="width: 30px;">
+          </a>
+          <a href="https://wa.me/3543534750">
+            <img src="./medios/WP.png" alt="Whatsapp" style="width: 30px;">
+          </a>
+        </div>
+        <p class="mb-0">Seguinos en redes</p>
+      </div>
     </footer>
+  
 </body>
 </html>
