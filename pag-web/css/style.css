@@ -145,7 +145,7 @@ margin-top: 20px
     padding: 30px 20px;
 }
 /* juegos online - Main */
-.contenedor.grid {
+.contenedorgrid {
     display: grid;
     grid-template-areas: 
       ". titulo ."
@@ -197,12 +197,12 @@ margin-top: 20px
     font-size: 48px; 
 }
 
-.contenedor.grid p {
+.contenedorgrid p {
     text-align: left;
     font-size: 24px;
 }
 
-.contenedor.grid a {
+.contenedorgrid a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #8a2a82; 
