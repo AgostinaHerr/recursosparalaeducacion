@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #E9A5F1
+    background-color: #cca1d1
     
 }
 html{
@@ -16,18 +16,26 @@ html{
     font-size: 62.5%;
 }
 /*header*/
+
 header { 
     position: relative;
     width: 100%;
     height: 100px; 
     background-color:#8F87F1 ;
+    position: sticky;
+    top: 0px;
+    margin: 20px 0px;
 }
 
+header img {
+    width: 80px;
+}
 header nav {
     position: absolute;
     bottom: 0;
     right: 0; 
-    width: 50%; 
+    width: 40%; 
+    height: 100%;
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px; 
@@ -42,4 +50,252 @@ header ul {
     align-items: center;
 }
 
+header a{
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px 10px;
+}
+/*H1*/
 
+.centrar {
+    text-align: center;
+    color: aqua;
+    font-size: 3rem;
+    margin: 10px 0px;
+}
+
+/*H2*/
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    margin: 10px 0px;
+}
+p {
+    font-size: 2rem;
+    margin: 10px 5px;
+}
+/*main de index*/
+.primera-parte {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 10px 0px;
+}
+.primera-parte img {
+    height: 300px;
+}
+.primera-parte h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.segunda-parte {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px 0px;
+}
+.segunda-parte div{
+    width: 45%;
+    text-align: center;
+}
+.segunda-parte img {
+    height: 300px;
+  width: auto;
+  margin: 10px 10px;
+}
+
+/*footer*/
+footer{
+    margin: 10px 5px;
+}
+footer img {
+    width: 80px;
+}
+footer div {
+    display: flex;
+    justify-content: right;
+}
+
+/*LENGUA-MAIN*/
+.alinear {
+    height: 40%;
+    margin: 10px 10px;
+}
+.alinear ol {
+        height: 60%;
+        margin-right: 10px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 10px;
+}
+
+.ordenaimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+}
+h3{
+    text-align: center;
+    color: aqua;
+    font-size: 2.3rem;
+    margin: 10px 0px;
+}
+
+    /*main escribinos*/
+form {
+    width: 60%;
+    height: 400px;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+input{
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+textarea {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 120px;
+}
+
+
+
+   .form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    }
+    .img{
+    height: 40%;
+    width: auto;
+    text-align: center;
+    padding: 20px;
+    }
+
+/*grid en matemática*/
+.contenedor-grid{ 
+    display: grid;
+    grid-template-areas: 
+    ". titulo ."
+    ". img1 link"
+    "texto1 texto1 texto1"
+    ". titulo2 ."
+    "titulo3 titulo4 titulo5"
+    "frase1 frase2 frase3"
+    "img2 img3 img4";
+    grid-template-columns: 28% 35% 28% ;
+    grid-template-rows: 100px 300px 100px 80px 50px 150px 150px;
+   }
+.grid-titulo{
+    grid-area: titulo;
+    color: aqua;
+    font-size: 3rem;
+    text-align: center;
+
+}
+.grid-img1 {
+grid-area: img1;
+height: 300px;
+}
+.grid-link{
+    grid-area: link;
+}
+.grid-texto1{
+    grid-area: texto1;
+}
+.grid-titulo2{
+    grid-area: titulo2;
+}
+.grid-titulo3{
+    grid-area: titulo3;
+}
+.grid-frase1{
+    grid-area: frase1;
+}
+.grid-img2{
+    grid-area: img2;
+}
+.grid-titulo4{
+    grid-area: titulo4;
+}
+.grid-frase2{
+    grid-area: frase2;
+}
+.grid-img3{
+    grid-area: img3;
+}
+.grid-titulo5{
+    grid-area: titulo5;
+}
+.grid-frase3{
+    grid-area: frase3;
+}
+.grid-img4{
+    grid-area: img4;
+}
+/*juegos con grid*/
+.contenedor2grid{
+    display: grid;
+    grid-template-areas: 
+    ". titulo1j ."
+    "texto1j texto1j texto1j"
+    "img1j img2j img3j"
+    "texto2j texto2j texto2j"
+    "titulo2j titulo2j titulo2j"
+    "word . iniciar"
+    "klofky . registrar";
+    grid-template-columns:30% 40% 30%;
+    grid-template-rows: 100px 200px 300px 100px 100px 150px 150px;
+}
+.grid-titulo1j{
+    grid-area: titulo1j;
+    color: aqua;
+    font-size: 3rem;
+    text-align: center
+}
+.grid-texto1j{
+    grid-area: texto1j;
+}
+.grid-img1j{
+    grid-area: img1j;
+}
+.grid-img2j{
+    grid-area: img2j;
+}
+.grid-img3j{
+    grid-area: img3j;
+}
+.grid-texto2j{
+    grid-area: texto2j;
+}
+.grid-titulo2j{
+    grid-area: titulo2j;
+    color: aqua;
+}
+.grid-word{
+    grid-area: word;
+    color: blue;
+}
+.grid-iniciar{
+    grid-area: iniciar;
+    font-size: 2rem;
+}
+.grid-klofky{
+    grid-area: klofky;
+    color: blue;
+}
+.grid-registrar{
+    grid-area: registrar;
+    font-size: 2rem;
+}
