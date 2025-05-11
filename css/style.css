@@ -299,3 +299,15 @@ height: 300px;
     grid-area: registrar;
     font-size: 2rem;
 }
+
+/*responsive-lengua*/
+.para-mobile{
+    text-align: center;
+    color: aqua;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+.p-mobile{
+font-size: 1.5rem;
+    margin: 5px;
+}
