@@ -12,8 +12,11 @@
     height: 400px;
     padding: 20px;
     font-size: 2.5rem;
-    &:hover
+
+    &:hover{
+        color: aqua;
     }
+}
     input{
         margin: 20px;
         padding: 10px;

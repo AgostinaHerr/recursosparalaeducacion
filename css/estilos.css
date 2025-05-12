@@ -1,18 +1,447 @@
-/* Error: expected "{".
- *    ,
- * 15 |     &:hover
- *    |            ^
- *    '
- *   sass\partials\_escribinos.scss 15:12  @import
- *   sass\estilos.scss 6:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 15 \2502      &:hover\d\a    \2502             ^\a    \2575 \a   sass\\partials\\_escribinos.scss 15:12  @import\a   sass\\estilos.scss 6:9                 root stylesheet';
+/*header*/
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #8F87F1;
+  position: sticky;
+  top: 0px;
+  margin: 20px 0px;
 }
+header img {
+  width: 80px;
+}
+header nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+header nav ul {
+  height: 60%;
+  margin-right: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px 10px;
+}
+
+/*footer*/
+footer {
+  margin: 10px 5px;
+}
+footer div {
+  display: flex;
+  justify-content: right;
+}
+footer div img {
+  width: 80px;
+}
+
+/*main de index*/
+.primera-parte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-top: 10px 0px;
+}
+.primera-parte .centrar {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 3rem;
+  margin: 10px 0px;
+}
+.primera-parte h2 {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+  margin: 10px 0px;
+}
+.primera-parte p {
+  font-size: 2rem;
+  margin: 10px 5px;
+}
+.primera-parte img {
+  width: auto;
+  height: 300px;
+}
+.primera-parte h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.segunda-parte {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.segunda-parte div {
+  width: 45%;
+  text-align: center;
+}
+.segunda-parte div img {
+  height: 300px;
+  width: auto;
+  margin: 10px 10px;
+}
+.segunda-parte p {
+  font-size: 2rem;
+  margin: 10px 5px;
+}
+.segunda-parte .fila {
+  display: flex;
+  align-items: center;
+}
+.segunda-parte .fila p {
+  font-size: 2rem;
+  margin: 0;
+  max-width: 100%;
+}
+.segunda-parte .fila img {
+  max-width: 50%;
+  height: auto;
+}
+
+/*main de matematica*/
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: ". titulo ." ". img1 link" "texto1 texto1 texto1" ". titulo2 ." "titulo3 titulo4 titulo5" "frase1 frase2 frase3" "img2 img3 img4";
+  grid-template-columns: 28% 35% 28%;
+  grid-template-rows: 100px 300px 100px 80px 50px 150px 150px;
+}
+.contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
+  grid-area: titulo;
+  color: rgb(0, 255, 255);
+  font-size: 3rem;
+  text-align: center;
+}
+.contenedor-grid .grid-img1 {
+  grid-area: img1;
+  height: 300px;
+}
+.contenedor-grid .grid-link {
+  grid-area: link;
+}
+.contenedor-grid .grid-texto1 {
+  grid-area: texto1;
+}
+.contenedor-grid .grid-titulo2 {
+  grid-area: titulo2;
+}
+.contenedor-grid .grid-titulo3 {
+  grid-area: titulo3;
+}
+.contenedor-grid .grid-frase1 {
+  grid-area: frase1;
+}
+.contenedor-grid .grid-img2 {
+  grid-area: img2;
+}
+.contenedor-grid .grid-titulo4 {
+  grid-area: titulo4;
+}
+.contenedor-grid .grid-frase2 {
+  grid-area: frase2;
+}
+.contenedor-grid .grid-img3 {
+  grid-area: img3;
+}
+.contenedor-grid .grid-titulo5 {
+  grid-area: titulo5;
+}
+.contenedor-grid .grid-frase3 {
+  grid-area: frase3;
+}
+.contenedor-grid .grid-img4 {
+  grid-area: img4;
+}
+
+/*main de juegos*/
+.contenedor2grid {
+  display: grid;
+  grid-template-areas: ". titulo1j ." "texto1j texto1j texto1j" "img1j img2j img3j" "texto2j texto2j texto2j" "titulo2j titulo2j titulo2j" "word . iniciar" "klofky . registrar";
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 100px 200px 300px 100px 100px 150px 150px;
+}
+.contenedor2grid .grid-titulo1j {
+  grid-area: titulo1j;
+}
+.contenedor2grid .grid-texto1j {
+  grid-area: texto1j;
+  padding: 10px;
+}
+.contenedor2grid .grid-img1j {
+  grid-area: img1j;
+  padding: 10px;
+}
+.contenedor2grid .grid-img2j {
+  grid-area: img2j;
+  padding: 10px;
+}
+.contenedor2grid .grid-img3j {
+  grid-area: img3j;
+  padding: 10px;
+}
+.contenedor2grid .grid-texto2j {
+  grid-area: texto2j;
+  text-align: center;
+}
+.contenedor2grid .grid-titulo2j {
+  grid-area: titulo2j;
+  color: aqua;
+}
+.contenedor2grid .grid-word {
+  grid-area: word;
+  color: blue;
+}
+.contenedor2grid .grid-iniciar {
+  grid-area: iniciar;
+  font-size: 2rem;
+  color: blue;
+}
+.contenedor2grid .grid-klofky {
+  grid-area: klofky;
+  color: blue;
+}
+.contenedor2grid .grid-registrar {
+  grid-area: registrar;
+  font-size: 2rem;
+}
+
+/*main de escribinos*/
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.transicion form {
+  width: 60%;
+  height: 400px;
+  padding: 20px;
+  font-size: 2.5rem;
+}
+.transicion form:hover {
+  color: aqua;
+}
+.transicion input {
+  margin: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.transicion textarea {
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 120px;
+}
+
+.img {
+  width: auto;
+  height: 40%;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto-largo {
+  font-size: 1.5rem;
+}
+
+/*main de lenguayresponsive-*/
+.para-mobile {
+  text-align: center;
+  color: aqua;
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+
+.p-mobile {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.detalle-desktop {
+  display: block;
+}
+
+.ver-mas-mobile {
+  display: none;
+}
+
+/*mediaq*/
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  header img {
+    width: 50px;
+    margin: 5px;
+  }
+  header nav {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+  header nav ul a {
+    font-size: 1rem;
+    margin: 5px 5px;
+  }
+  /*footer*/
+  footer img {
+    width: 30px;
+  }
+  /*main de index*/
+  .primera-parte img {
+    height: 100px;
+  }
+  .primera-parte h1 {
+    font-size: 2rem;
+  }
+  .primera-parte h2 {
+    font-size: 1.3rem;
+  }
+  .segunda-parte {
+    flex-direction: column;
+  }
+  .segunda-parte .fila {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .segunda-parte .fila img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .segunda-parte .fila p {
+    font-size: 1.3;
+    margin: 10px 0px;
+  }
+  .segunda-parte h2 {
+    font-size: 1.3rem;
+  }
+  .segunda-parte p {
+    font-size: 1rem;
+    margin: 0px 10px;
+  }
+  /*main de escribinos*/
+  form {
+    width: auto;
+    height: auto;
+  }
+  form label {
+    font-size: 1rem;
+  }
+  .texto-largo {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .img {
+    height: 20%;
+  }
+  /*main-matematica*/
+  .contenedor-grid {
+    grid-template-areas: "titulo" "img1" "link" "texto1" "titulo2" "titulo3" "titulo4" "titulo5";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 150px 60px 100px 80px repeat(3, 50px);
+  }
+  .contenedor-grid .grid-frase1 {
+    display: none;
+  }
+  .contenedor-grid .grid-frase2 {
+    display: none;
+  }
+  .contenedor-grid .grid-frase3 {
+    display: none;
+  }
+  .contenedor-grid .grid-img2 {
+    display: none;
+  }
+  .contenedor-grid .grid-img3 {
+    display: none;
+  }
+  .contenedor-grid .grid-img4 {
+    display: none;
+  }
+  .contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
+    font-size: 2.5rem;
+  }
+  .contenedor-grid .grid-img1 {
+    height: 150px;
+    width: 100%;
+  }
+  .contenedor-grid .grid-link {
+    font-size: 1.5rem;
+  }
+  .contenedor-grid .grid-titulo3 {
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-titulo4 {
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-titulo5 {
+    font-size: 2rem;
+  }
+  /*main de juegos*/
+  .contenedor2grid {
+    grid-template-areas: "titulo1j" "texto1j" "titulo2j" "word" "img1j" "iniciar" "klofky" "img3j" "registrar";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 250px 80px 80px 100px 50px 80px 100px 50px;
+    /*main de lengua*/
+  }
+  .contenedor2grid .grid-img2j {
+    display: none;
+  }
+  .contenedor2grid .grid-texto2j {
+    display: none;
+  }
+  .contenedor2grid .grid-img1j {
+    width: 50%;
+    height: 100px;
+  }
+  .contenedor2grid .grid-img3j {
+    width: 50%;
+    height: 100px;
+  }
+  .contenedor2grid .grid-titulo1j {
+    font-size: 2.5rem;
+  }
+  .contenedor2grid .grid-texto2j {
+    font-size: 2.3rem;
+  }
+  .contenedor2grid .grid-texto1j {
+    font-size: 1.3rem;
+  }
+  .contenedor2grid .detalle-desktop {
+    display: none;
+  }
+  .contenedor2grid .ver-mas-mobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
