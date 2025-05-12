@@ -1,0 +1,61 @@
+/*main de matematica*/
+
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    ". titulo ."
+    ". img1 link"
+    "texto1 texto1 texto1"
+    ". titulo2 ."
+    "titulo3 titulo4 titulo5"
+    "frase1 frase2 frase3"
+    "img2 img3 img4";
+    grid-template-columns: 28% 35% 28% ;
+    grid-template-rows: 100px 300px 100px 80px 50px 150px 150px;
+    .grid-titulo{
+        grid-area: titulo;
+        color: $titulo;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .grid-img1 {
+        grid-area: img1;
+        height: 300px;
+    }
+    .grid-link{
+        grid-area: link;
+    }
+    .grid-texto1{
+        grid-area: texto1;
+    }
+    .grid-titulo2{
+        grid-area: titulo2;
+    }
+    .grid-titulo3{
+        grid-area: titulo3;
+    }
+    .grid-frase1{
+        grid-area: frase1;
+    }
+    .grid-img2{
+        grid-area: img2;
+    }
+    .grid-titulo4{
+       grid-area: titulo4;
+    }
+    .grid-frase2{
+        grid-area: frase2;
+    }
+    .grid-img3{
+        grid-area: img3;
+    }
+    .grid-titulo5{
+        grid-area: titulo5;
+    }
+    .grid-frase3{
+        grid-area: frase3;
+    }
+    .grid-img4{
+        grid-area: img4;
+    }    
+}

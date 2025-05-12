@@ -39,7 +39,6 @@ header nav {
     justify-content: flex-end;
     padding: 10px 20px; 
 }
-
 header ul {
     height: 60%;
     margin-right: 10px;
@@ -59,7 +58,7 @@ header a{
 
 .centrar {
     text-align: center;
-    color: aqua;
+    color: rgb(0, 255, 255);
     font-size: 3rem;
     margin: 10px 0px;
 }
@@ -103,10 +102,22 @@ p {
 }
 .segunda-parte img {
     height: 300px;
-  width: auto;
-  margin: 10px 10px;
+    width: auto;
+    margin: 10px 10px;
 }
-
+.fila{
+        display: flex;
+        align-items: center;
+    }
+.fila p{
+    font-size: rem;
+    margin: 0;
+    max-width: 100%;
+  }
+  .fila img{
+    max-width: 50%;
+    height: auto;
+  }
 /*footer*/
 footer{
     margin: 10px 5px;
@@ -119,41 +130,11 @@ footer div {
     justify-content: right;
 }
 
-/*LENGUA-MAIN*/
-.alinear {
-    height: 40%;
-    margin: 10px 10px;
-}
-.alinear ol {
-        height: 60%;
-        margin-right: 10px;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px 10px;
-}
-
-.ordenaimg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    padding: 20px;
-}
-h3{
-    text-align: center;
-    color: aqua;
-    font-size: 2.3rem;
-    margin: 10px 0px;
-}
-
     /*main escribinos*/
 form {
     width: 60%;
     height: 400px;
-    padding: 20px;
+padding: 20px;
     font-size: 2.5rem;
 }
 input{
@@ -181,7 +162,8 @@ textarea {
     padding: 20px;
 }
     .texto-largo{
-        font-size: 1.5rem;
+        font-size: 2rem;
+        padding: 20px;
 }
 
 /*grid en matemática*/
@@ -200,8 +182,8 @@ textarea {
    }
 .grid-titulo{
     grid-area: titulo;
-    color: aqua;
-    font-size: 3rem;
+    color:aqua ;
+font-size: 3rem;
     text-align: center;
 
 }
@@ -220,6 +202,8 @@ height: 300px;
 }
 .grid-titulo3{
     grid-area: titulo3;
+    color: aqua;
+    font-size: 2rem;
 }
 .grid-frase1{
     grid-area: frase1;
@@ -229,6 +213,8 @@ height: 300px;
 }
 .grid-titulo4{
     grid-area: titulo4;
+    color: aqua;
+    font-size: 2rem;
 }
 .grid-frase2{
     grid-area: frase2;
@@ -238,6 +224,8 @@ height: 300px;
 }
 .grid-titulo5{
     grid-area: titulo5;
+    color: aqua;
+    font-size: 2rem;
 }
 .grid-frase3{
     grid-area: frase3;
@@ -267,18 +255,24 @@ height: 300px;
 }
 .grid-texto1j{
     grid-area: texto1j;
+    padding: 10px;
 }
 .grid-img1j{
     grid-area: img1j;
+    padding: 10px;
+
 }
 .grid-img2j{
     grid-area: img2j;
+    padding: 10px;
 }
 .grid-img3j{
     grid-area: img3j;
+    padding: 10px;
 }
 .grid-texto2j{
     grid-area: texto2j;
+    text-align: center;
 }
 .grid-titulo2j{
     grid-area: titulo2j;
@@ -287,6 +281,7 @@ height: 300px;
 .grid-word{
     grid-area: word;
     color: blue;
+font-size: 2rem;
 }
 .grid-iniciar{
     grid-area: iniciar;
@@ -296,6 +291,7 @@ height: 300px;
 .grid-klofky{
     grid-area: klofky;
     color: blue;
+    font-size: 2rem;
 }
 .grid-registrar{
     grid-area: registrar;
@@ -313,6 +309,14 @@ height: 300px;
 font-size: 1.5rem;
     margin: 5px;
 }
+/*LENGUA-MAIN*/
+.detalle-desktop {
+  display: block;
+}
+.ver-mas-mobile {
+  display: none;
+}
+
 
 /*responsive header*/
 @media (max-width: 480px){
@@ -325,7 +329,7 @@ font-size: 1.5rem;
     header img{
         width: 50px;
         margin: 5px;
-    }
+}
     header nav{
         position: static;
         width: 100%;
@@ -355,18 +359,26 @@ font-size: 1.5rem;
         font-size: 1.3rem;
     }
     .segunda-parte{
-        display: flex;
         flex-direction: column;
+    }    
+    
+    .fila {
+         width: 100%;
+        text-align: center;
+         flex-direction: column;
+         align-items: center;
     }
-    .segunda-parte img{
-        height: 100px;
+    .fila img{
+        width: 100%;
+        height: auto;
     }
-    p{font-size: 1rem;
+    .fila p{
+        font-size: 1.3;
+        margin: 10px 0px;
     }
-
 /*footer*/
     footer img{
-        width: 30px;
+width: 30px;
     }
 
 /*escribinos main*/
@@ -415,7 +427,7 @@ label {
     }
     .grid-img4{
         display: none;
-    }
+}
     .grid-img1{
         height: 150px;
         width: 100%;
@@ -450,12 +462,10 @@ label {
     .grid-img1j{
         width: 50%;
         height: 100px;
-        padding: 10px;
     }
     .grid-img3j{
         width: 50%;
         height: 100px;
-        padding: 10px;
     }
     .grid-titulo1j{
         font-size: 2.5rem;
@@ -465,9 +475,16 @@ label {
     }
     .grid-texto1j{
         font-size: 1.3rem;
-            padding: 10px;
     }
+/*main de lengua*/
+      .detalle-desktop{
+       display: none;
+    } 
+     .ver-mas-mobile{
+       display: block;
+     }
+     
 }
 
 
-   
+

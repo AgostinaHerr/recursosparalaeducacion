@@ -1,0 +1,61 @@
+/*main de juegos*/
+
+.contenedor2grid{
+    display: grid;
+    grid-template-areas: 
+    ". titulo1j ."
+    "texto1j texto1j texto1j"
+    "img1j img2j img3j"
+    "texto2j texto2j texto2j"
+    "titulo2j titulo2j titulo2j"
+    "word . iniciar"
+    "klofky . registrar";
+    grid-template-columns:30% 40% 30%;
+    grid-template-rows: 100px 200px 300px 100px 100px 150px 150px;
+    .grid-titulo1j{
+       @extend .grid-titulo;
+        grid-area: titulo1j;
+    }
+    .grid-texto1j{
+        grid-area: texto1j;
+        padding: 10px;
+    }
+    .grid-img1j{
+        grid-area: img1j;
+        padding: 10px;
+    }
+    .grid-img2j{
+        grid-area: img2j;
+        padding: 10px;
+    }
+    .grid-img3j{
+        grid-area: img3j;
+        padding: 10px;
+    }
+    .grid-texto2j{
+        grid-area: texto2j;
+        text-align: center;
+    }
+    .grid-titulo2j{
+        grid-area: titulo2j;
+        color: aqua;
+    }
+    .grid-word{
+        grid-area: word;
+        color: blue;
+    }
+    .grid-iniciar{
+        grid-area: iniciar;
+        font-size: 2rem;
+        color: blue;
+    }
+    .grid-klofky{
+        grid-area: klofky;
+        color: blue;
+    }
+    .grid-registrar{
+        grid-area: registrar;
+        font-size: 2rem;
+    }
+
+}

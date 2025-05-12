@@ -1,0 +1,176 @@
+/*mediaq*/
+@media (max-width: 480px){
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    img{
+        width: 50px;
+        margin: 5px;
+    }
+    nav{
+         position: static;
+         width: 100%;
+         height: auto;
+         display: flex;
+         justify-content: center;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+            width: 100%;
+        a{
+             font-size: 1rem;
+            margin: 5px 5px;
+        }
+        }
+    }
+}
+/*footer*/
+footer{
+    img{
+        width: 30px;
+    }
+}
+/*main de index*/
+.primera-parte{
+    img{
+        height: 100px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+}
+.segunda-parte{
+    flex-direction: column;
+        .fila{
+            width: 100%;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: auto;
+                padding: 10px;
+             }
+             p{
+                font-size: 1.3;
+                margin: 10px 0px;
+             }
+        }
+        h2{
+             font-size: 1.3rem;
+        }
+        p{
+            font-size: 1rem;
+            margin: 0px 10px;
+        }
+}
+/*main de escribinos*/
+form{
+    width: auto;
+    height: auto;
+    label{
+         font-size: 1rem;
+    } 
+}
+.texto-largo{
+    font-size: 1rem;
+    padding: 10px;
+}
+.img{
+    height: 20%;
+}
+/*main-matematica*/
+.contenedor-grid{
+    grid-template-areas:  
+        "titulo"
+        "img1"
+        "link"
+        "texto1"
+        "titulo2"
+        "titulo3"
+        "titulo4"
+        "titulo5";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 80px 150px 60px 100px 80px repeat(3, 50px);
+        .grid-frase1{
+            display: none;
+        }
+        .grid-frase2{
+            display: none;
+        }
+        .grid-frase3{
+            display: none;
+        }
+        .grid-img2{
+            display: none;
+        }
+        .grid-img3{
+            display: none;
+        }
+        .grid-img4{
+            display: none;
+        }
+        .grid-img1{
+            height: 150px;
+            width: 100%;
+        }
+        .grid-link{
+            font-size: 1.5rem;
+        }
+        .grid-titulo3{
+            font-size: 2rem;
+        }
+}
+/*main de juegos*/
+.contenedor2grid{
+    grid-template-areas: 
+    "titulo1j"
+    "texto1j"
+    "titulo2j"
+    "word"
+    "img1j"
+    "iniciar"
+    "klofky"
+    "img3j"
+    "registrar";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 250px 80px 80px 100px 50px 80px 100px 50px ;
+    .grid-img2j{
+        display: none;
+    }
+    .grid-texto2j{
+        display: none;
+    }
+    .grid-img1j{
+        width: 50%;
+        height: 100px;
+    }
+    .grid-img3j{
+        width: 50%;
+        height: 100px;
+    }
+    .grid-titulo1j{
+        font-size: 2.5rem;
+    }
+    .grid-texto2j{
+        font-size: 2.3rem;
+    }
+    .grid-texto1j{
+        font-size: 1.3rem;
+    }
+    /*main de lengua*/
+    .detalle-desktop{
+        display: none;
+    }
+    .ver-mas-mobile{
+       display: block;
+    }
+}
+}
