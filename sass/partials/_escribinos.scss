@@ -1,15 +1,18 @@
 /*main de escribinos*/
 
-.form{ 
+.form{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
+}
+.transicion{
     form{
         width: 60%;
     height: 400px;
     padding: 20px;
     font-size: 2.5rem;
+    &:hover
     }
     input{
         margin: 20px;

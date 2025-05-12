@@ -137,18 +137,20 @@ form {
 padding: 20px;
     font-size: 2.5rem;
 }
-input{
+.transicion input{
     margin: 20px;
     padding: 10px;
     width: 100%;
 }
-textarea {
+.treansicion textarea {
     margin: 20px;
     padding: 20px;
     width: 100%;
     height: 120px;
 }
-
+.transicion:hover{
+    color: aqua;
+}
    .form{
     display: flex;
     justify-content: center;
