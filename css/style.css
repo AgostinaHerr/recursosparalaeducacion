@@ -18,7 +18,6 @@ html{
 /*header*/
 
 header { 
-    position: relative;
     width: 100%;
     height: 100px; 
     background-color:#8F87F1 ;
@@ -55,6 +54,7 @@ header a{
     font-size: 1.5rem;
     padding: 20px 10px;
 }
+
 /*H1*/
 
 .centrar {
@@ -168,20 +168,21 @@ textarea {
     height: 120px;
 }
 
-
-
    .form{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 20px;
-    }
+}
     .img{
     height: 40%;
     width: auto;
     text-align: center;
     padding: 20px;
-    }
+}
+    .texto-largo{
+        font-size: 1.5rem;
+}
 
 /*grid en matemática*/
 .contenedor-grid{ 
@@ -290,6 +291,7 @@ height: 300px;
 .grid-iniciar{
     grid-area: iniciar;
     font-size: 2rem;
+    color: blue;
 }
 .grid-klofky{
     grid-area: klofky;
@@ -311,3 +313,161 @@ height: 300px;
 font-size: 1.5rem;
     margin: 5px;
 }
+
+/*responsive header*/
+@media (max-width: 480px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    header img{
+        width: 50px;
+        margin: 5px;
+    }
+    header nav{
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        width: 100%;
+    }
+    header a{
+        font-size: 1rem;
+        margin: 5px 5px;
+    }
+
+/*main de index*/
+    .primera-parte img{
+        height: 100px;
+    }
+    .primera-parte h1{
+        font-size: 2rem;
+    }
+    .segunda-parte h2{
+        font-size: 1.3rem;
+    }
+    .segunda-parte{
+        display: flex;
+        flex-direction: column;
+    }
+    .segunda-parte img{
+        height: 100px;
+    }
+    p{font-size: 1rem;
+    }
+
+/*footer*/
+    footer img{
+        width: 30px;
+    }
+
+/*escribinos main*/
+    form{
+        width: auto;
+        height: auto;
+    }
+label {
+    font-size: 1rem;
+    }
+.img{
+    height: 20%;
+    }
+.texto-largo{
+    font-size: 1rem;
+    padding: 10px;
+    }
+    /*matemática-grid*/
+    .contenedor-grid{
+        grid-template-areas:  
+        "titulo"
+        "img1"
+        "link"
+        "texto1"
+        "titulo2"
+        "titulo3"
+        "titulo4"
+        "titulo5";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 80px 150px 60px 100px 80px repeat(3, 50px);
+    }
+    .grid-frase1{
+        display: none;
+    }
+    .grid-frase2{
+        display: none;
+    }
+    .grid-frase3{
+        display: none;
+    }
+    .grid-img2{
+        display: none;
+    }
+    .grid-img3{
+        display: none;
+    }
+    .grid-img4{
+        display: none;
+    }
+    .grid-img1{
+        height: 150px;
+        width: 100%;
+    }
+    .grid-link{
+        font-size: 1.5rem;
+    }
+    .grid-titulo3{
+        font-size: 2rem;
+    }
+/*juegos con grid*/
+    .contenedor2grid{
+    grid-template-areas: 
+    "titulo1j"
+    "texto1j"
+    "titulo2j"
+    "word"
+    "img1j"
+    "iniciar"
+    "klofky"
+    "img3j"
+    "registrar";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 250px 80px 80px 100px 50px 80px 100px 50px ;
+    } 
+    .grid-img2j{
+        display: none;
+    }
+    .grid-texto2j{
+        display: none;
+    }
+    .grid-img1j{
+        width: 50%;
+        height: 100px;
+        padding: 10px;
+    }
+    .grid-img3j{
+        width: 50%;
+        height: 100px;
+        padding: 10px;
+    }
+    .grid-titulo1j{
+        font-size: 2.5rem;
+    }
+    .grid-texto2j{
+        font-size: 2.3rem;
+    }
+    .grid-texto1j{
+        font-size: 1.3rem;
+            padding: 10px;
+    }
+}
+
+
+   
