@@ -67,11 +67,11 @@ header a{
 h2 {
     text-align: center;
     color: black;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 10px 0px;
 }
 p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 10px 5px;
 }
 /*main de index*/
@@ -304,7 +304,7 @@ font-size: 2rem;
 .para-mobile{
     text-align: center;
     color: aqua;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 10px 0px;
 }
 .p-mobile{
@@ -442,6 +442,12 @@ label {
     }
     .grid-titulo3{
         font-size: 2rem;
+    }
+    .grid-titulo4{
+        font-size: 2.5rem;
+    }
+    .grid-titulo5{
+        font-size: 2.5rem;
     }
 /*juegos con grid*/
     .contenedor2grid{

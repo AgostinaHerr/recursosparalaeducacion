@@ -11,10 +11,13 @@
     "word . iniciar"
     "klofky . registrar";
     grid-template-columns:30% 40% 30%;
-    grid-template-rows: 100px 200px 300px 100px 100px 150px 150px;
+    grid-template-rows: 100px 300px 300px 100px 100px 150px 150px;
     .grid-titulo1j{
        @extend .grid-titulo;
         grid-area: titulo1j;
+        color: $titulo;
+        font-size: 3rem;
+        text-align: center
     }
     .grid-texto1j{
         grid-area: texto1j;
@@ -33,7 +36,7 @@
         padding: 10px;
     }
     .grid-texto2j{
-        grid-area: texto2j;
+       grid-area: texto2j;
         text-align: center;
     }
     .grid-titulo2j{

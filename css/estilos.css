@@ -1,3 +1,13 @@
+/*body y html*/
+body {
+  background-color: #cca1d1;
+}
+
+html {
+  font-family: "Crimson Text", serif;
+  font-size: 62.5%;
+}
+
 /*header*/
 header {
   width: 100%;
@@ -118,7 +128,7 @@ footer div img {
   display: grid;
   grid-template-areas: ". titulo ." ". img1 link" "texto1 texto1 texto1" ". titulo2 ." "titulo3 titulo4 titulo5" "frase1 frase2 frase3" "img2 img3 img4";
   grid-template-columns: 28% 35% 28%;
-  grid-template-rows: 100px 300px 100px 80px 50px 150px 150px;
+  grid-template-rows: 100px 300px 150px 100px 80px 150px 150px;
 }
 .contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
   grid-area: titulo;
@@ -138,6 +148,7 @@ footer div img {
 }
 .contenedor-grid .grid-titulo2 {
   grid-area: titulo2;
+  color: rgb(0, 255, 255);
 }
 .contenedor-grid .grid-titulo3 {
   grid-area: titulo3;
@@ -172,10 +183,13 @@ footer div img {
   display: grid;
   grid-template-areas: ". titulo1j ." "texto1j texto1j texto1j" "img1j img2j img3j" "texto2j texto2j texto2j" "titulo2j titulo2j titulo2j" "word . iniciar" "klofky . registrar";
   grid-template-columns: 30% 40% 30%;
-  grid-template-rows: 100px 200px 300px 100px 100px 150px 150px;
+  grid-template-rows: 100px 300px 300px 100px 100px 150px 150px;
 }
 .contenedor2grid .grid-titulo1j {
   grid-area: titulo1j;
+  color: rgb(0, 255, 255);
+  font-size: 3rem;
+  text-align: center;
 }
 .contenedor2grid .grid-texto1j {
   grid-area: texto1j;
@@ -220,6 +234,25 @@ footer div img {
 }
 
 /*main de escribinos*/
+.centrar {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 3rem;
+  margin: 10px 0px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-size: 2.8rem;
+  margin: 10px 0px;
+}
+
+p {
+  font-size: 2.5rem;
+  margin: 10px 5px;
+}
+
 .form {
   display: flex;
   justify-content: center;
@@ -263,13 +296,13 @@ footer div img {
 .para-mobile {
   text-align: center;
   color: aqua;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 10px 0px;
 }
 
-.p-mobile {
-  font-size: 1.5rem;
-  margin: 5px;
+p {
+  font-size: 2rem;
+  margin: 10px 0px;
 }
 
 .detalle-desktop {

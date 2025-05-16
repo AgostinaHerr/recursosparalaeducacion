@@ -1,5 +1,20 @@
 /*main de escribinos*/
-
+.centrar {
+    text-align: center;
+    color: rgb(0, 255, 255);
+    font-size: 3rem;
+    margin: 10px 0px;
+}
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.8rem;
+    margin: 10px 0px;
+}
+p {
+    font-size: 2.5rem;
+    margin: 10px 5px;
+}
 .form{
     display: flex;
     justify-content: center;
