@@ -10,6 +10,7 @@ html {
 
 /*header*/
 header {
+  font-family: "Crimson Text", serif;
   width: 100%;
   height: 100px;
   background-color: #8F87F1;
@@ -127,8 +128,8 @@ footer div img {
 .contenedor-grid {
   display: grid;
   grid-template-areas: ". titulo ." ". img1 link" "texto1 texto1 texto1" ". titulo2 ." "titulo3 titulo4 titulo5" "frase1 frase2 frase3" "img2 img3 img4";
-  grid-template-columns: 28% 35% 28%;
-  grid-template-rows: 100px 300px 150px 100px 80px 150px 150px;
+  grid-template-columns: 30% 35% 30%;
+  grid-template-rows: 100px 350px 200px 100px 150px 150px 250px;
 }
 .contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
   grid-area: titulo;
@@ -139,40 +140,55 @@ footer div img {
 .contenedor-grid .grid-img1 {
   grid-area: img1;
   height: 300px;
+  margin: 30px;
 }
 .contenedor-grid .grid-link {
   grid-area: link;
+  padding: 20px;
 }
 .contenedor-grid .grid-texto1 {
   grid-area: texto1;
+  padding: 20px;
 }
 .contenedor-grid .grid-titulo2 {
   grid-area: titulo2;
   color: rgb(0, 255, 255);
+  font-size: 2.8rem;
 }
 .contenedor-grid .grid-titulo3 {
   grid-area: titulo3;
+  color: rgb(0, 255, 255);
+  font-size: 2.3rem;
+  padding: 20px;
 }
 .contenedor-grid .grid-frase1 {
   grid-area: frase1;
+  padding: 20px;
 }
 .contenedor-grid .grid-img2 {
   grid-area: img2;
+  padding: 20px;
 }
 .contenedor-grid .grid-titulo4 {
   grid-area: titulo4;
+  color: rgb(0, 255, 255);
+  font-size: 2.3rem;
 }
 .contenedor-grid .grid-frase2 {
   grid-area: frase2;
+  padding: 20px;
 }
 .contenedor-grid .grid-img3 {
   grid-area: img3;
 }
 .contenedor-grid .grid-titulo5 {
   grid-area: titulo5;
+  color: aqua;
+  font-size: 2.3rem;
 }
 .contenedor-grid .grid-frase3 {
   grid-area: frase3;
+  padding: 20px;
 }
 .contenedor-grid .grid-img4 {
   grid-area: img4;
@@ -193,6 +209,7 @@ footer div img {
 }
 .contenedor2grid .grid-texto1j {
   grid-area: texto1j;
+  font-size: 2.3rem;
   padding: 10px;
 }
 .contenedor2grid .grid-img1j {
@@ -218,6 +235,7 @@ footer div img {
 .contenedor2grid .grid-word {
   grid-area: word;
   color: blue;
+  font-size: 2.5rem;
 }
 .contenedor2grid .grid-iniciar {
   grid-area: iniciar;
@@ -227,6 +245,7 @@ footer div img {
 .contenedor2grid .grid-klofky {
   grid-area: klofky;
   color: blue;
+  font-size: 2.5rem;
 }
 .contenedor2grid .grid-registrar {
   grid-area: registrar;
@@ -248,11 +267,6 @@ h2 {
   margin: 10px 0px;
 }
 
-p {
-  font-size: 2.5rem;
-  margin: 10px 5px;
-}
-
 .form {
   display: flex;
   justify-content: center;
@@ -268,6 +282,9 @@ p {
 }
 .transicion form:hover {
   color: aqua;
+}
+.transicion label {
+  font-size: 2.5rem;
 }
 .transicion input {
   margin: 20px;
@@ -289,7 +306,7 @@ p {
 }
 
 .texto-largo {
-  font-size: 1.5rem;
+  font-size: 2.3rem;
 }
 
 /*main de lenguayresponsive-*/
@@ -302,7 +319,7 @@ p {
 
 p {
   font-size: 2rem;
-  margin: 10px 0px;
+  margin: 20px 0px;
 }
 
 .detalle-desktop {
@@ -382,16 +399,36 @@ p {
     margin: 0px 10px;
   }
   /*main de escribinos*/
+  .centrar {
+    text-align: center;
+    color: rgb(0, 255, 255);
+    font-size: 2rem;
+    margin: 10px 0px;
+  }
   form {
-    width: auto;
-    height: auto;
+    width: 100%;
+    padding: 10px;
   }
   form label {
-    font-size: 1rem;
+    font-size: 2rem;
   }
-  .texto-largo {
+  form input {
+    width: 100%;
     font-size: 1rem;
     padding: 10px;
+    box-sizing: border-box;
+  }
+  form textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .texto-largo {
+    font-size: 1.2rem;
+    display: block;
+    margin: 20px;
+    justify-content: center;
   }
   .img {
     height: 20%;
@@ -400,7 +437,7 @@ p {
   .contenedor-grid {
     grid-template-areas: "titulo" "img1" "link" "texto1" "titulo2" "titulo3" "titulo4" "titulo5";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 150px 60px 100px 80px repeat(3, 50px);
+    grid-template-rows: 80px 350px 100px 190px 100px repeat(3, 90px);
   }
   .contenedor-grid .grid-frase1 {
     display: none;
@@ -421,29 +458,46 @@ p {
     display: none;
   }
   .contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
-    font-size: 2.5rem;
+    grid-area: titulo;
+    font-size: 3rem;
+  }
+  .contenedor-grid .grid-titulo2 {
+    grid-area: titulo2;
+    font-size: 2rem;
+    color: black;
   }
   .contenedor-grid .grid-img1 {
-    height: 150px;
+    grid-area: img1;
     width: 100%;
+    padding: 10px;
   }
   .contenedor-grid .grid-link {
+    grid-area: link;
+    font-size: 1.5rem;
+    display: block;
+  }
+  .contenedor-grid .grid-texto1 {
+    grid-area: texto1;
+    padding: 20px;
     font-size: 1.5rem;
   }
   .contenedor-grid .grid-titulo3 {
-    font-size: 2rem;
+    grid-area: titulo3;
+    font-size: 1.8rem;
   }
   .contenedor-grid .grid-titulo4 {
-    font-size: 2rem;
+    grid-area: titulo4;
+    font-size: 1.8rem;
   }
   .contenedor-grid .grid-titulo5 {
-    font-size: 2rem;
+    grid-area: titulo5;
+    font-size: 1.8rem;
   }
   /*main de juegos*/
   .contenedor2grid {
     grid-template-areas: "titulo1j" "texto1j" "titulo2j" "word" "img1j" "iniciar" "klofky" "img3j" "registrar";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 250px 80px 80px 100px 50px 80px 100px 50px;
+    grid-template-rows: 50px 250px 80px 80px 150px 80px 80px 150px 80px;
     /*main de lengua*/
   }
   .contenedor2grid .grid-img2j {
@@ -457,17 +511,33 @@ p {
     height: 100px;
   }
   .contenedor2grid .grid-img3j {
+    grid-area: img3j;
     width: 50%;
     height: 100px;
   }
   .contenedor2grid .grid-titulo1j {
-    font-size: 2.5rem;
+    grid-area: titulo1j;
+    font-size: 3rem;
+  }
+  .contenedor2grid .grid-titulo2j {
+    grid-area: titulo2j;
+    font-size: 2rem;
   }
   .contenedor2grid .grid-texto2j {
-    font-size: 2.3rem;
+    grid-area: texto2j;
+    font-size: 1rem;
   }
   .contenedor2grid .grid-texto1j {
+    grid-area: texto1j;
     font-size: 1.3rem;
+  }
+  .contenedor2grid .grid-imiciar {
+    grid-area: iniciar;
+    font-size: 1rem;
+  }
+  .contenedor2grid .grid-resistrar {
+    grid-area: registrar;
+    font-size: 1rem;
   }
   .contenedor2grid .detalle-desktop {
     display: none;

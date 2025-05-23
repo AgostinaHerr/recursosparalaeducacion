@@ -10,8 +10,8 @@
     "titulo3 titulo4 titulo5"
     "frase1 frase2 frase3"
     "img2 img3 img4";
-    grid-template-columns: 28% 35% 28% ;
-    grid-template-rows: 100px 300px 150px 100px 80px 150px 150px;
+    grid-template-columns: 30% 35% 30% ;
+    grid-template-rows: 100px 350px 200px 100px 150px 150px 250px;
     .grid-titulo{
         grid-area: titulo;
         color: $titulo;
@@ -21,40 +21,56 @@
     .grid-img1 {
         grid-area: img1;
         height: 300px;
+        margin: 30px;
     }
     .grid-link{
         grid-area: link;
+        padding: 20px;
     }
     .grid-texto1{
         grid-area: texto1;
+        padding: 20px;
     }
     .grid-titulo2{
         grid-area: titulo2;
         color: $titulo;
+        font-size: 2.8rem;
     }
     .grid-titulo3{
         grid-area: titulo3;
+        color: $titulo;
+        font-size: 2.3rem;
+        padding: 20px;
+
     }
     .grid-frase1{
         grid-area: frase1;
+        padding: 20px;
     }
     .grid-img2{
         grid-area: img2;
+        padding: 20px;
     }
     .grid-titulo4{
        grid-area: titulo4;
+       color: $titulo;
+       font-size: 2.3rem;
     }
     .grid-frase2{
         grid-area: frase2;
+        padding: 20px;
     }
     .grid-img3{
         grid-area: img3;
     }
     .grid-titulo5{
         grid-area: titulo5;
+        color: aqua;
+        font-size: 2.3rem;
     }
     .grid-frase3{
         grid-area: frase3;
+        padding: 20px;
     }
     .grid-img4{
         grid-area: img4;

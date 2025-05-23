@@ -72,16 +72,39 @@ footer{
         }
 }
 /*main de escribinos*/
+.centrar {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+
 form{
-    width: auto;
-    height: auto;
+    width: 100%;
+    padding: 10px;
+    
     label{
-         font-size: 1rem;
-    } 
+         font-size: 2rem;
+    }
+    input{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    textarea{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }
 .texto-largo{
-    font-size: 1rem;
-    padding: 10px;
+    font-size: 1.2rem;
+    display: block;
+    margin: 20px;
+    justify-content: center;
+
 }
 .img{
     height: 20%;
@@ -98,7 +121,7 @@ form{
         "titulo4"
         "titulo5";
         grid-template-columns: 1fr ;
-        grid-template-rows: 80px 150px 60px 100px 80px repeat(3, 50px);
+        grid-template-rows: 80px 350px 100px 190px 100px repeat(3, 90px);
         .grid-frase1{
             display: none;
         }
@@ -118,23 +141,40 @@ form{
             display: none;
         }
         .grid-titulo{
-            font-size: 2.5rem;
+            grid-area: titulo;
+            font-size: 3rem;
+        }
+        .grid-titulo2{
+            grid-area: titulo2;
+            font-size: 2rem;
+            color: black;
         }
         .grid-img1{
-            height: 150px;
+            grid-area: img1;
             width: 100%;
+            padding:10px;
         }
         .grid-link{
-            font-size: 1.5rem;
+            grid-area: link;
+            font-size: 1.5rem;   
+            display: block;         
+        }
+         .grid-texto1{
+        grid-area: texto1;
+        padding: 20px;
+        font-size: 1.5rem;
         }
         .grid-titulo3{
-            font-size: 2rem;
+            grid-area: titulo3;
+            font-size: 1.8rem;
         }
         .grid-titulo4{
-            font-size: 2rem;
+            grid-area: titulo4;
+            font-size: 1.8rem;
         }
         .grid-titulo5{
-            font-size: 2rem;
+            grid-area: titulo5;
+            font-size: 1.8rem;
         }
 }
 /*main de juegos*/
@@ -150,7 +190,7 @@ form{
     "img3j"
     "registrar";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 250px 80px 80px 100px 50px 80px 100px 50px ;
+    grid-template-rows: 50px 250px 80px 80px 150px 80px 80px 150px 80px ;
     .grid-img2j{
         display: none;
     }
@@ -162,19 +202,37 @@ form{
         height: 100px;
     }
     .grid-img3j{
+        grid-area: img3j;
         width: 50%;
         height: 100px;
     }
     .grid-titulo1j{
-        font-size: 2.5rem;
+        grid-area: titulo1j;
+        font-size: 3rem;
+    }
+    .grid-titulo2j{
+         grid-area: titulo2j;
+        font-size: 2rem;
     }
     .grid-texto2j{
-        font-size: 2.3rem;
+        grid-area: texto2j;
+        font-size: 1rem;
     }
     .grid-texto1j{
+        grid-area: texto1j;
         font-size: 1.3rem;
     }
+    .grid-imiciar{
+        grid-area: iniciar;
+        font-size: 1rem;
+    }
+    .grid-resistrar{
+        grid-area: registrar;
+        font-size: 1rem;
+    }
+
     /*main de lengua*/
+    
     .detalle-desktop{
         display: none;
     }

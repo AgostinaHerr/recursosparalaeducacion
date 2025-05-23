@@ -11,10 +11,7 @@ h2 {
     font-size: 2.8rem;
     margin: 10px 0px;
 }
-p {
-    font-size: 2.5rem;
-    margin: 10px 5px;
-}
+
 .form{
     display: flex;
     justify-content: center;
@@ -23,7 +20,7 @@ p {
 }
 .transicion{
     form{
-        width: 60%;
+    width: 60%;
     height: 400px;
     padding: 20px;
     font-size: 2.5rem;
@@ -31,7 +28,10 @@ p {
     &:hover{
         color: aqua;
     }
-}
+    }
+    label{
+        font-size: 2.5rem;
+    }
     input{
         margin: 20px;
         padding: 10px;
@@ -50,5 +50,5 @@ p {
     padding: 20px;   
 }
 .texto-largo{
-    font-size: 1.5rem;
+    font-size: 2.3rem;
 }

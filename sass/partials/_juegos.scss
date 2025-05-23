@@ -21,6 +21,7 @@
     }
     .grid-texto1j{
         grid-area: texto1j;
+        font-size: 2.3rem;
         padding: 10px;
     }
     .grid-img1j{
@@ -46,6 +47,8 @@
     .grid-word{
         grid-area: word;
         color: blue;
+        font-size: 2.5rem;
+
     }
     .grid-iniciar{
         grid-area: iniciar;
@@ -55,6 +58,8 @@
     .grid-klofky{
         grid-area: klofky;
         color: blue;
+        font-size: 2.5rem;
+
     }
     .grid-registrar{
         grid-area: registrar;
