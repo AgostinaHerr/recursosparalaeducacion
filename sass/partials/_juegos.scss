@@ -39,32 +39,40 @@
     }
     .grid-texto2j{
        grid-area: texto2j;
-        text-align: center;
+       font-size: 2.3rem;
+       padding: 20px;
+       
     }
     .grid-titulo2j{
         grid-area: titulo2j;
         color: aqua;
+        text-align: center;
+        font-size: 2.8rem;
     }
     .grid-word{
         grid-area: word;
         color: blue;
         font-size: 2.5rem;
+        padding: 20px;
 
     }
     .grid-iniciar{
         grid-area: iniciar;
         font-size: 2rem;
         color: blue;
+        padding: 20px;
     }
     .grid-klofky{
         grid-area: klofky;
         color: blue;
         font-size: 2.5rem;
-
+        padding: 20px;
+        
     }
     .grid-registrar{
         grid-area: registrar;
         font-size: 2rem;
+        padding: 20px;
     }
 
 }

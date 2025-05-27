@@ -142,7 +142,8 @@ footer div img {
 }
 .contenedor-grid .grid-img1 {
   grid-area: img1;
-  height: 300px;
+  height: 250px;
+  width: auto;
   margin: 30px;
 }
 .contenedor-grid .grid-link {
@@ -232,30 +233,37 @@ footer div img {
 }
 .contenedor2grid .grid-texto2j {
   grid-area: texto2j;
-  text-align: center;
+  font-size: 2.3rem;
+  padding: 20px;
 }
 .contenedor2grid .grid-titulo2j {
   grid-area: titulo2j;
   color: aqua;
+  text-align: center;
+  font-size: 2.8rem;
 }
 .contenedor2grid .grid-word {
   grid-area: word;
   color: blue;
   font-size: 2.5rem;
+  padding: 20px;
 }
 .contenedor2grid .grid-iniciar {
   grid-area: iniciar;
   font-size: 2rem;
   color: blue;
+  padding: 20px;
 }
 .contenedor2grid .grid-klofky {
   grid-area: klofky;
   color: blue;
   font-size: 2.5rem;
+  padding: 20px;
 }
 .contenedor2grid .grid-registrar {
   grid-area: registrar;
   font-size: 2rem;
+  padding: 20px;
 }
 
 /*main de escribinos*/
@@ -319,6 +327,7 @@ footer div img {
 .img {
   width: 100%;
   height: auto;
+  text-align: center;
 }
 
 /*main de lenguayresponsive-*/
