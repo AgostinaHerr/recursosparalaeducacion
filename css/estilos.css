@@ -1,4 +1,10 @@
 /*body y html*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #cca1d1;
 }
@@ -16,7 +22,6 @@ header {
   background-color: #8F87F1;
   position: sticky;
   top: 0px;
-  margin: 20px 0px;
 }
 header img {
   width: 80px;
@@ -43,6 +48,7 @@ header nav ul a {
   color: white;
   font-size: 1.5rem;
   padding: 20px 10px;
+  text-decoration: none;
 }
 
 /*footer*/
@@ -54,7 +60,7 @@ footer div {
   justify-content: right;
 }
 footer div img {
-  width: 80px;
+  width: 100px;
 }
 
 /*main de index*/
@@ -64,7 +70,7 @@ footer div img {
   align-items: center;
   text-align: center;
   padding-bottom: 40px;
-  margin-top: 10px 0px;
+  margin-top: 0px 0px;
 }
 .primera-parte .centrar {
   text-align: center;
@@ -80,20 +86,16 @@ footer div img {
 }
 .primera-parte p {
   font-size: 2rem;
-  margin: 10px 5px;
+  margin: 20px 20px;
 }
 .primera-parte img {
   width: auto;
   height: 300px;
 }
-.primera-parte h2 {
-  text-align: center;
-  font-size: 2.5rem;
-}
 
 .segunda-parte {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 20px;
   margin: 10px 0px;
 }
@@ -127,15 +129,16 @@ footer div img {
 /*main de matematica*/
 .contenedor-grid {
   display: grid;
-  grid-template-areas: ". titulo ." ". img1 link" "texto1 texto1 texto1" ". titulo2 ." "titulo3 titulo4 titulo5" "frase1 frase2 frase3" "img2 img3 img4";
+  grid-template-areas: ". titulo ." ". img1 link" "texto1 texto1 texto1" ". titulo2 titulo2" "titulo3 titulo4 titulo5" "frase1 frase2 frase3" "img2 img3 img4";
   grid-template-columns: 30% 35% 30%;
-  grid-template-rows: 100px 350px 200px 100px 150px 150px 250px;
+  grid-template-rows: 100px 350px 200px 100px 150px 150px 350px;
 }
 .contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
   grid-area: titulo;
   color: rgb(0, 255, 255);
   font-size: 3rem;
   text-align: center;
+  padding: 20px;
 }
 .contenedor-grid .grid-img1 {
   grid-area: img1;
@@ -145,6 +148,8 @@ footer div img {
 .contenedor-grid .grid-link {
   grid-area: link;
   padding: 20px;
+  font-size: 2rem;
+  color: black;
 }
 .contenedor-grid .grid-texto1 {
   grid-area: texto1;
@@ -206,6 +211,7 @@ footer div img {
   color: rgb(0, 255, 255);
   font-size: 3rem;
   text-align: center;
+  padding: 20px;
 }
 .contenedor2grid .grid-texto1j {
   grid-area: texto1j;
@@ -253,63 +259,77 @@ footer div img {
 }
 
 /*main de escribinos*/
-.centrar {
+.padre .centrar {
   text-align: center;
   color: rgb(0, 255, 255);
   font-size: 3rem;
-  margin: 10px 0px;
+  padding: 20px;
+  margin: 20px 20px;
 }
-
-h2 {
+.padre h2 {
   text-align: center;
   color: black;
   font-size: 2.8rem;
   margin: 10px 0px;
 }
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.padre .texto-largo {
+  font-size: 2.3rem;
   padding: 20px;
 }
 
-.transicion form {
+.form {
+  display: block;
+  align-items: flex-start;
+  width: 90%;
+  padding: 20px;
+}
+.form .transicion form {
   width: 60%;
   height: 400px;
   padding: 20px;
   font-size: 2.5rem;
 }
-.transicion form:hover {
+.form .transicion form:hover {
   color: aqua;
 }
-.transicion label {
+.form .transicion label {
   font-size: 2.5rem;
 }
-.transicion input {
+.form .transicion label:hover {
+  color: aqua;
+}
+.form .transicion input {
   margin: 20px;
   padding: 10px;
   width: 100%;
 }
-.transicion textarea {
+.form .transicion input:hover {
+  color: aqua;
+}
+.form .transicion textarea {
   margin: 20px;
   padding: 20px;
   width: 100%;
   height: 120px;
 }
-
-.img {
-  width: auto;
-  height: 40%;
-  text-align: center;
-  padding: 20px;
+.form .transicion textarea:hover {
+  color: aqua;
 }
 
-.texto-largo {
-  font-size: 2.3rem;
+.img {
+  width: 100%;
+  height: auto;
 }
 
 /*main de lenguayresponsive-*/
+.centrar {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 3rem;
+  padding: 20px;
+  margin: 20px 20px;
+}
+
 .para-mobile {
   text-align: center;
   color: aqua;
@@ -333,6 +353,7 @@ p {
 /*mediaq*/
 @media (max-width: 480px) {
   header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,11 +378,16 @@ p {
   }
   header nav ul a {
     font-size: 1rem;
-    margin: 5px 5px;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
   }
   /*footer*/
   footer img {
-    width: 30px;
+    display: none;
+  }
+  footer a {
+    padding: 20px;
   }
   /*main de index*/
   .primera-parte img {
@@ -399,11 +425,16 @@ p {
     margin: 0px 10px;
   }
   /*main de escribinos*/
-  .centrar {
+  .padre .centrar {
     text-align: center;
     color: rgb(0, 255, 255);
     font-size: 2rem;
     margin: 10px 0px;
+  }
+  .padre .texto-largo {
+    font-size: 1.5rem;
+    display: block;
+    margin: 20px;
   }
   form {
     width: 100%;
@@ -424,20 +455,16 @@ p {
     padding: 10px;
     box-sizing: border-box;
   }
-  .texto-largo {
-    font-size: 1.2rem;
-    display: block;
-    margin: 20px;
-    justify-content: center;
-  }
   .img {
     height: 20%;
+    text-align: center;
   }
   /*main-matematica*/
   .contenedor-grid {
-    grid-template-areas: "titulo" "img1" "link" "texto1" "titulo2" "titulo3" "titulo4" "titulo5";
+    display: grid;
+    grid-template-areas: "titulo" "link" "img1" "texto1" "titulo2" "titulo3" "titulo4" "titulo5";
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 350px 100px 190px 100px repeat(3, 90px);
+    grid-template-rows: 80px 80px 300px 200px 100px repeat(3, 90px);
   }
   .contenedor-grid .grid-frase1 {
     display: none;
@@ -465,10 +492,12 @@ p {
     grid-area: titulo2;
     font-size: 2rem;
     color: black;
+    text-align: center;
   }
   .contenedor-grid .grid-img1 {
     grid-area: img1;
-    width: 100%;
+    width: 90%;
+    align-items: center;
     padding: 10px;
   }
   .contenedor-grid .grid-link {
@@ -484,20 +513,23 @@ p {
   .contenedor-grid .grid-titulo3 {
     grid-area: titulo3;
     font-size: 1.8rem;
+    text-align: center;
   }
   .contenedor-grid .grid-titulo4 {
     grid-area: titulo4;
     font-size: 1.8rem;
+    text-align: center;
   }
   .contenedor-grid .grid-titulo5 {
     grid-area: titulo5;
     font-size: 1.8rem;
+    text-align: center;
   }
   /*main de juegos*/
   .contenedor2grid {
     grid-template-areas: "titulo1j" "texto1j" "titulo2j" "word" "img1j" "iniciar" "klofky" "img3j" "registrar";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 250px 80px 80px 150px 80px 80px 150px 80px;
+    grid-template-rows: 50px 350px 80px 80px 150px 80px 80px 150px 80px;
     /*main de lengua*/
   }
   .contenedor2grid .grid-img2j {
@@ -507,6 +539,7 @@ p {
     display: none;
   }
   .contenedor2grid .grid-img1j {
+    grid-area: img1j;
     width: 50%;
     height: 100px;
   }
@@ -522,6 +555,7 @@ p {
   .contenedor2grid .grid-titulo2j {
     grid-area: titulo2j;
     font-size: 2rem;
+    text-align: center;
   }
   .contenedor2grid .grid-texto2j {
     grid-area: texto2j;
@@ -529,15 +563,22 @@ p {
   }
   .contenedor2grid .grid-texto1j {
     grid-area: texto1j;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    box-sizing: border-box;
   }
-  .contenedor2grid .grid-imiciar {
+  .contenedor2grid .grid-iniciar {
     grid-area: iniciar;
-    font-size: 1rem;
+    font-size: 2rem;
+    color: black;
+    font-family: "Crimson Text", serif;
+    text-decoration: none;
   }
-  .contenedor2grid .grid-resistrar {
+  .contenedor2grid .grid-registrar {
     grid-area: registrar;
-    font-size: 1rem;
+    font-size: 2rem;
+    color: black;
+    font-family: "Crimson Text", serif;
+    text-decoration: none;
   }
   .contenedor2grid .detalle-desktop {
     display: none;
@@ -546,5 +587,329 @@ p {
     display: block;
   }
 }
+/*mediaq tablet*/
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  header img {
+    width: 30px;
+    margin: auto 10px;
+  }
+  header nav {
+    position: static;
+    justify-content: center;
+    width: 100%;
+  }
+  header nav ul {
+    justify-content: center;
+    padding: 0 20px;
+    width: 100%;
+  }
+  header nav ul a {
+    font-size: 1.5rem;
+    padding: 0 10px;
+    text-decoration: none;
+  }
+  /*footer*/
+  footer {
+    margin: 10px 5px;
+  }
+  footer img {
+    display: none;
+  }
+  footer a {
+    padding: 20px;
+  }
+  /*main de inicio*/
+  .primera-parte .centrar {
+    font-size: 2.5rem;
+  }
+  .primera-parte h2 {
+    font-size: 2.5rem;
+  }
+  .primera-parte p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .primera-parte img {
+    height: auto;
+    width: auto;
+  }
+  .segunda-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .segunda-parte div {
+    width: 50%;
+    text-align: center;
+  }
+  .segunda-parte div img {
+    height: 200px;
+  }
+  .segunda-parte p {
+    font-size: 1.8rem;
+  }
+  .segunda-parte .fila {
+    display: flex;
+    flex-direction: column;
+  }
+  .segunda-parte .fila p {
+    font-size: 1.8rem;
+  }
+  .segunda-parte .fila img {
+    height: auto;
+    width: 400px;
+  }
+  .contenedor-grid {
+    display: grid;
+    grid-template-areas: "titulo titulo titulo" ". img1 ." "link link link" "texto1 texto1 texto1" "titulo2 titulo2 titulo2" "titulo3 frase1 frase1" "titulo4 frase2 frase2" "titulo5 frase3 frase3" ".img3.";
+    grid-template-columns: 30% 35% 30%;
+    grid-template-rows: 90px 170px 70px 300px 150px 150px 150px 200px 300px;
+  }
+  .contenedor-grid .grid-img2 {
+    display: none;
+  }
+  .contenedor-grid .grid-img4 {
+    display: none;
+  }
+  .contenedor-grid .grid-titulo, .contenedor-grid .contenedor2grid .grid-titulo1j, .contenedor2grid .contenedor-grid .grid-titulo1j {
+    grid-area: titulo;
+    color: rgb(0, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px;
+  }
+  .contenedor-grid .grid-img1 {
+    grid-area: img1;
+    height: 150px;
+    margin: 30px;
+  }
+  .contenedor-grid .grid-link {
+    grid-area: link;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-texto1 {
+    grid-area: texto1;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-titulo2 {
+    grid-area: titulo2;
+    color: rgb(0, 255, 255);
+    font-size: 2.5rem;
+  }
+  .contenedor-grid .grid-titulo3 {
+    grid-area: titulo3;
+    color: rgb(0, 255, 255);
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .contenedor-grid .grid-frase1 {
+    grid-area: frase1;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-img2 {
+    grid-area: img2;
+    padding: 20px;
+  }
+  .contenedor-grid .grid-titulo4 {
+    grid-area: titulo4;
+    color: rgb(0, 255, 255);
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .contenedor-grid .grid-frase2 {
+    grid-area: frase2;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-img3 {
+    grid-area: img3;
+  }
+  .contenedor-grid .grid-titulo5 {
+    grid-area: titulo5;
+    color: aqua;
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .contenedor-grid .grid-frase3 {
+    grid-area: frase3;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  .contenedor-grid .grid-img4 {
+    grid-area: img4;
+  }
+  /*main de juegos*/
+  .contenedor2grid {
+    display: grid;
+    grid-template-areas: "titulo1j  titulo1j titulo1j " "texto1j texto1j texto1j" "img3j . img1j" "texto2j texto2j texto2j" "titulo2j titulo2j titulo2j" "word . iniciar" "klofky . registrar";
+    grid-template-columns: 28% 40% 28%;
+    grid-template-rows: 70px 450px 100px 100px 100px 150px 150px;
+  }
+  .contenedor2grid .grid-img2j {
+    display: none;
+  }
+  .contenedor2grid .grid-titulo1j {
+    grid-area: titulo1j;
+    color: rgb(0, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px;
+  }
+  .contenedor2grid .grid-texto1j {
+    grid-area: texto1j;
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+  }
+  .contenedor2grid .grid-img1j {
+    grid-area: img1j;
+    width: 150px;
+    padding: 10px;
+  }
+  .contenedor2grid .grid-img2j {
+    grid-area: img2j;
+    width: 100px;
+    padding: 5px;
+  }
+  .contenedor2grid .grid-img3j {
+    grid-area: img3j;
+    width: 165px;
+    padding: 10px;
+  }
+  .contenedor2grid .grid-texto2j {
+    display: none;
+  }
+  .contenedor2grid .grid-titulo2j {
+    grid-area: titulo2j;
+    color: aqua;
+  }
+  .contenedor2grid .grid-word {
+    grid-area: word;
+    color: blue;
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+  .contenedor2grid .grid-iniciar {
+    grid-area: iniciar;
+    font-size: 2rem;
+    color: blue;
+  }
+  .contenedor2grid .grid-klofky {
+    grid-area: klofky;
+    color: blue;
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+  .contenedor2grid .grid-registrar {
+    grid-area: registrar;
+    font-size: 2rem;
+    color: blue;
+  }
+  /*main de escribinos*/
+  .padre .centrar {
+    font-size: 2.5rem;
+  }
+  .padre h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.3rem;
+    margin: 10px 0px;
+  }
+  .padre .texto-largo {
+    font-size: 1.5rem;
+    margin: 20px;
+  }
+  .form {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .form .transicion {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+  .form .transicion:hover {
+    color: aqua;
+  }
+  .form label {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  .form label:hover {
+    color: aqua;
+  }
+  .form input {
+    padding: 20px;
+    width: 90%;
+  }
+  .form input:hover {
+    color: aqua;
+  }
+  .form textarea {
+    padding: 20px;
+    width: 90%;
+    height: 120px;
+  }
+  .form textarea:hover {
+    color: aqua;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+}
+/*.padre{
+    .centrar {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+.texto-largo{
+    font-size: 1.5rem;
+    display: block;
+    margin: 20px;
+}
+}
+
+
+form{
+    width: 100%;
+    padding: 10px;
+
+    label{
+         font-size: 2rem;
+    }
+    input{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    textarea{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+.img{
+    height: 20%;
+}
+}*/
 
 /*# sourceMappingURL=estilos.css.map */

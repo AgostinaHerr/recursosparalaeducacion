@@ -2,10 +2,12 @@
 @media (max-width: 480px){
 
 header{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
+    
     img{
         width: 50px;
         margin: 5px;
@@ -23,7 +25,9 @@ header{
             width: 100%;
         a{
              font-size: 1rem;
-            margin: 5px 5px;
+             padding: 5px 10px;
+             display: block;
+             text-decoration: none;
         }
         }
     }
@@ -31,7 +35,10 @@ header{
 /*footer*/
 footer{
     img{
-        width: 30px;
+        display: none;
+    }
+    a{
+        padding: 20px;
     }
 }
 /*main de index*/
@@ -72,12 +79,20 @@ footer{
         }
 }
 /*main de escribinos*/
-.centrar {
+.padre{
+    .centrar {
   text-align: center;
   color: rgb(0, 255, 255);
   font-size: 2rem;
   margin: 10px 0px;
 }
+.texto-largo{
+    font-size: 1.5rem;
+    display: block;
+    margin: 20px;
+}
+}
+
 
 form{
     width: 100%;
@@ -99,29 +114,24 @@ form{
         box-sizing: border-box;
     }
 }
-.texto-largo{
-    font-size: 1.2rem;
-    display: block;
-    margin: 20px;
-    justify-content: center;
-
-}
 .img{
     height: 20%;
+    text-align: center;
 }
 /*main-matematica*/
 .contenedor-grid{
+    display: grid;
     grid-template-areas:  
         "titulo"
-        "img1"
         "link"
+        "img1"
         "texto1"
         "titulo2"
         "titulo3"
         "titulo4"
         "titulo5";
         grid-template-columns: 1fr ;
-        grid-template-rows: 80px 350px 100px 190px 100px repeat(3, 90px);
+        grid-template-rows: 80px 80px 300px 200px 100px repeat(3, 90px);
         .grid-frase1{
             display: none;
         }
@@ -148,10 +158,12 @@ form{
             grid-area: titulo2;
             font-size: 2rem;
             color: black;
+            text-align: center;
         }
         .grid-img1{
             grid-area: img1;
-            width: 100%;
+            width: 90%;
+            align-items: center;
             padding:10px;
         }
         .grid-link{
@@ -167,14 +179,17 @@ form{
         .grid-titulo3{
             grid-area: titulo3;
             font-size: 1.8rem;
+            text-align: center;
         }
         .grid-titulo4{
             grid-area: titulo4;
             font-size: 1.8rem;
+            text-align: center;
         }
         .grid-titulo5{
             grid-area: titulo5;
             font-size: 1.8rem;
+            text-align: center;
         }
 }
 /*main de juegos*/
@@ -190,7 +205,7 @@ form{
     "img3j"
     "registrar";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 250px 80px 80px 150px 80px 80px 150px 80px ;
+    grid-template-rows: 50px 350px 80px 80px 150px 80px 80px 150px 80px ;
     .grid-img2j{
         display: none;
     }
@@ -198,6 +213,7 @@ form{
         display: none;
     }
     .grid-img1j{
+        grid-area: img1j;
         width: 50%;
         height: 100px;
     }
@@ -213,6 +229,7 @@ form{
     .grid-titulo2j{
          grid-area: titulo2j;
         font-size: 2rem;
+        text-align: center;
     }
     .grid-texto2j{
         grid-area: texto2j;
@@ -220,15 +237,22 @@ form{
     }
     .grid-texto1j{
         grid-area: texto1j;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        box-sizing: border-box;
     }
-    .grid-imiciar{
+    .grid-iniciar{
         grid-area: iniciar;
-        font-size: 1rem;
+        font-size: 2rem;
+        color: black;
+        font-family:"Crimson Text", serif; ;
+        text-decoration: none;
     }
-    .grid-resistrar{
+    .grid-registrar{
         grid-area: registrar;
-        font-size: 1rem;
+        font-size: 2rem;
+        color: black;
+        font-family:"Crimson Text", serif; ;
+        text-decoration: none;
     }
 
     /*main de lengua*/

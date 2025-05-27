@@ -1,0 +1,373 @@
+/*mediaq tablet*/
+@media(min-width: 481px) and (max-width:768px){
+        header{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    
+        img{
+            width: 30px;
+            margin: auto 10px;
+        }
+        nav{
+            position: static;
+            justify-content: center;
+            width: 100%;
+            ul{
+                justify-content:center;
+                padding: 0 20px;
+                width: 100%;
+                a{
+                    font-size: 1.5rem;
+                    padding:0 10px;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+    }
+
+
+/*footer*/
+    footer{
+    margin: 10px 5px;
+        img{
+            display: none;
+        }
+        a{ 
+           padding: 20px;
+        }
+            
+         }
+
+/*main de inicio*/
+.primera-parte{
+    .centrar{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    img{
+        height: auto;
+        width: auto;
+    }
+    }
+
+.segunda-parte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        width: 50%;
+        text-align: center;
+        img{
+            height: 200px;
+        }
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .fila{
+         display: flex;
+        flex-direction: column;
+        
+        p{
+            font-size: 1.8rem;
+        }
+        img{
+            height: auto;
+            width: 400px;
+        }
+        }
+    }
+
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    ". img1 ."
+    "link link link"
+    "texto1 texto1 texto1"
+    "titulo2 titulo2 titulo2"
+    "titulo3 frase1 frase1"
+    "titulo4 frase2 frase2"
+    "titulo5 frase3 frase3"
+    ".img3.";
+    grid-template-columns: 30% 35% 30% ;
+    grid-template-rows: 90px 170px 70px 300px 150px 150px 150px 200px 300px; 
+    .grid-img2{
+        display: none;
+    }
+    .grid-img4{
+        display: none;
+    }
+    .grid-titulo{
+        grid-area: titulo;
+        color: $titulo;
+        font-size: 3rem;
+        text-align: center;
+        margin: 20px;
+    }
+    .grid-img1 {
+        grid-area: img1;
+        height: 150px;
+        margin: 30px;
+    }
+    .grid-link{
+        grid-area: link;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .grid-texto1{
+        grid-area: texto1;
+        padding: 20px;
+        font-size: 2rem
+    }
+    .grid-titulo2{
+        grid-area: titulo2;
+        color: $titulo;
+        font-size: 2.5rem;
+    }
+    .grid-titulo3{
+        grid-area: titulo3;
+        color: $titulo;
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .grid-frase1{
+        grid-area: frase1;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .grid-img2{
+        grid-area: img2;
+        padding: 20px;
+    }
+    .grid-titulo4{
+       grid-area: titulo4;
+       color: $titulo;
+       font-size: 2rem;
+       margin: 10px;
+    }
+    .grid-frase2{
+        grid-area: frase2;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .grid-img3{
+        grid-area: img3;
+    }
+    .grid-titulo5{
+        grid-area: titulo5;
+        color: aqua;
+        font-size: 2rem;
+        margin: 10px;
+    }
+    .grid-frase3{
+        grid-area: frase3;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .grid-img4{
+        grid-area: img4;
+    }    
+}
+
+
+        
+/*main de juegos*/
+
+.contenedor2grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo1j  titulo1j titulo1j "
+    "texto1j texto1j texto1j"
+    "img3j . img1j"
+    "texto2j texto2j texto2j"
+    "titulo2j titulo2j titulo2j"
+    "word . iniciar"
+    "klofky . registrar";
+    grid-template-columns:28% 40% 28%;
+    grid-template-rows: 70px 450px 100px 100px 100px 150px 150px;
+    .grid-img2j{
+        display: none
+    }
+
+    .grid-titulo1j{
+       @extend .grid-titulo;
+        grid-area: titulo1j;
+        color: $titulo;
+        font-size: 3rem;
+        text-align: center; 
+        margin: 10px;
+    }
+    .grid-texto1j{
+        grid-area: texto1j;
+        font-size: 1.8rem;
+        padding: 10px;
+        text-align: center;
+    }
+    .grid-img1j{
+        grid-area: img1j;
+        width: 150px;
+        padding: 10px;
+    }
+    .grid-img2j{
+        grid-area: img2j;
+        width: 100px;
+        padding: 5px;
+    }
+    .grid-img3j{
+        grid-area: img3j;
+        width: 165px;
+        padding: 10px;
+    }
+    .grid-texto2j{
+    display: none;
+    }
+    .grid-titulo2j{
+        grid-area: titulo2j;
+        color: aqua;
+    }
+    .grid-word{
+        grid-area: word;
+        color: blue;
+        font-size: 2.5rem;
+        margin: 10px;
+
+    }
+    .grid-iniciar{
+        grid-area: iniciar;
+        font-size: 2rem;
+        color: blue;
+    }
+    .grid-klofky{
+        grid-area: klofky;
+        color: blue;
+        font-size: 2.5rem;
+        margin: 10px;
+
+    }
+    .grid-registrar{
+        grid-area: registrar;
+        font-size: 2rem;
+        color: blue;
+    }
+}
+/*main de escribinos*/
+.padre{
+    .centrar {
+    font-size: 2.5rem;
+    }
+    h2 {
+    text-align: center;
+    color: black;
+    font-size: 2.3rem;
+    margin: 10px 0px;
+    }
+    .texto-largo{
+    font-size: 1.5rem;
+    margin: 20px;
+    }
+
+}
+
+.form{
+    width: 100%;          
+    margin-bottom: 20px;  
+    display: block;
+    .transicion{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    &:hover{
+        color: aqua;
+    }
+    }
+    label{
+        padding: 20px;
+        font-size: 1rem;
+    
+        &:hover{
+            color: aqua;
+        }
+    }
+    input{
+        padding: 20px;
+        width: 90%;
+
+        &:hover{
+            color: aqua;
+        }
+    }
+    textarea{
+        padding: 20px;
+        width: 90%;
+        height: 120px;
+
+        &:hover{
+            color: aqua
+        }
+    }
+}
+.img{
+    width: 100%;
+    height: auto; 
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+}
+/*.padre{
+    .centrar {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-size: 2rem;
+  margin: 10px 0px;
+}
+.texto-largo{
+    font-size: 1.5rem;
+    display: block;
+    margin: 20px;
+}
+}
+
+
+form{
+    width: 100%;
+    padding: 10px;
+    
+    label{
+         font-size: 2rem;
+    }
+    input{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    textarea{
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}
+.img{
+    height: 20%;
+}
+}*/
+
+
+
+

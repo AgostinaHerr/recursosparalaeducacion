@@ -6,17 +6,18 @@
     ". titulo ."
     ". img1 link"
     "texto1 texto1 texto1"
-    ". titulo2 ."
+    ". titulo2 titulo2"
     "titulo3 titulo4 titulo5"
     "frase1 frase2 frase3"
     "img2 img3 img4";
     grid-template-columns: 30% 35% 30% ;
-    grid-template-rows: 100px 350px 200px 100px 150px 150px 250px;
+    grid-template-rows: 100px 350px 200px 100px 150px 150px 350px;
     .grid-titulo{
         grid-area: titulo;
         color: $titulo;
         font-size: 3rem;
         text-align: center;
+        padding: 20px;
     }
     .grid-img1 {
         grid-area: img1;
@@ -26,6 +27,8 @@
     .grid-link{
         grid-area: link;
         padding: 20px;
+        font-size: 2rem;
+        color: black;
     }
     .grid-texto1{
         grid-area: texto1;
