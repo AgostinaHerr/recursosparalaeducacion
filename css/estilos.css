@@ -148,8 +148,8 @@ footer div img {
 }
 .contenedor-grid .grid-link {
   grid-area: link;
-  padding: 20px;
-  font-size: 2rem;
+  padding: 10px;
+  font-size: 1.8rem;
   color: black;
 }
 .contenedor-grid .grid-texto1 {
@@ -218,6 +218,7 @@ footer div img {
   grid-area: texto1j;
   font-size: 2.3rem;
   padding: 10px;
+  margin: 10px;
 }
 .contenedor2grid .grid-img1j {
   grid-area: img1j;
@@ -539,7 +540,7 @@ p {
   .contenedor2grid {
     grid-template-areas: "titulo1j" "texto1j" "titulo2j" "word" "img1j" "iniciar" "klofky" "img3j" "registrar";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 350px 80px 80px 150px 80px 80px 150px 80px;
+    grid-template-rows: 50px 400px 80px 80px 150px 80px 80px 150px 80px;
     /*main de lengua*/
   }
   .contenedor2grid .grid-img2j {
@@ -715,6 +716,7 @@ p {
     grid-area: titulo2;
     color: rgb(0, 255, 255);
     font-size: 2.5rem;
+    text-align: center;
   }
   .contenedor-grid .grid-titulo3 {
     grid-area: titulo3;
@@ -764,9 +766,12 @@ p {
     display: grid;
     grid-template-areas: "titulo1j  titulo1j titulo1j " "texto1j texto1j texto1j" "img3j . img1j" "texto2j texto2j texto2j" "titulo2j titulo2j titulo2j" "word . iniciar" "klofky . registrar";
     grid-template-columns: 28% 40% 28%;
-    grid-template-rows: 70px 550px 100px 350px 100px 150px 150px;
+    grid-template-rows: 70px 550px 100px 350px 100px 100px 150px;
   }
   .contenedor2grid .grid-img2j {
+    display: none;
+  }
+  .contenedor2grid .grid-texto2j {
     display: none;
   }
   .contenedor2grid .grid-titulo1j {
@@ -796,9 +801,6 @@ p {
     grid-area: img3j;
     width: 165px;
     padding: 10px;
-  }
-  .contenedor2grid .grid-texto2j {
-    display: none;
   }
   .contenedor2grid .grid-titulo2j {
     grid-area: titulo2j;

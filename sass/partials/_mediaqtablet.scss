@@ -137,6 +137,7 @@
         grid-area: titulo2;
         color: $titulo;
         font-size: 2.5rem;
+        text-align: center;
     }
     .grid-titulo3{
         grid-area: titulo3;
@@ -198,9 +199,12 @@
     "word . iniciar"
     "klofky . registrar";
     grid-template-columns:28% 40% 28%;
-    grid-template-rows: 70px 550px 100px 350px 100px 150px 150px;
+    grid-template-rows: 70px 550px 100px 350px 100px 100px 150px;
     .grid-img2j{
         display: none;
+    }
+    .grid-texto2j{
+    display: none;
     }
 
     .grid-titulo1j{
@@ -232,9 +236,7 @@
         width: 165px;
         padding: 10px;
     }
-    .grid-texto2j{
-    display: none;
-    }
+    
     .grid-titulo2j{
         grid-area: titulo2j;
         color: aqua;
