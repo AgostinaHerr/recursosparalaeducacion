@@ -194,15 +194,14 @@
     "titulo1j  titulo1j titulo1j "
     "texto1j texto1j texto1j"
     "img3j . img1j"
+    ". img2j ."
     "texto2j texto2j texto2j"
     "titulo2j titulo2j titulo2j"
     "word . iniciar"
     "klofky . registrar";
     grid-template-columns:28% 40% 28%;
-    grid-template-rows: 70px 550px 100px 350px 100px 100px 150px;
-    .grid-img2j{
-        display: none;
-    }
+    grid-template-rows: 70px 350px 100px 100px 100px 90px 80px 150px;
+    
     .grid-texto2j{
     display: none;
     }
@@ -228,8 +227,10 @@
     }
     .grid-img2j{
         grid-area: img2j;
-        width: 100px;
+        width: 250px;
         padding: 5px;
+        justify-self: center;
+        
     }
     .grid-img3j{
         grid-area: img3j;
