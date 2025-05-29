@@ -22,22 +22,26 @@
         font-size: 2rem;
         margin: 20px 20px;
     }
-    img{
+    .borde{
         @include formato(auto, 300px);
+        border: aqua solid 10px;
     }
+    
 }
 .segunda-parte{
     display: flex;
     justify-content: center;
     padding: 20px;
     margin: 10px 0px;
-    div{
+
+    .fila{
         width: 45%;
         text-align: center;
-        img{
+        .rotacion{
             height: 300px;
             width: auto;
             margin: 10px 10px;
+            transform: skew(10deg, 5deg);
         }
     }
     p{

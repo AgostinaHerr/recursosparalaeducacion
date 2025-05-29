@@ -24,6 +24,7 @@
         height: 250px;
         width: auto;
         margin: 30px;
+        border: aqua solid 10px;
     }
     .grid-link{
         grid-area: link;
@@ -53,7 +54,8 @@
     }
     .grid-img2{
         grid-area: img2;
-        padding: 20px;
+        margin: 20px;
+        border: aqua solid 10px;
     }
     .grid-titulo4{
        grid-area: titulo4;
@@ -66,6 +68,7 @@
     }
     .grid-img3{
         grid-area: img3;
+        border: aqua solid 10px;
     }
     .grid-titulo5{
         grid-area: titulo5;
@@ -78,5 +81,6 @@
     }
     .grid-img4{
         grid-area: img4;
+        border: aqua solid 10px;
     }    
 }

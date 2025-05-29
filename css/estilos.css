@@ -89,9 +89,10 @@ footer div img {
   font-size: 2rem;
   margin: 20px 20px;
 }
-.primera-parte img {
+.primera-parte .borde {
   width: auto;
   height: 300px;
+  border: aqua solid 10px;
 }
 
 .segunda-parte {
@@ -100,14 +101,15 @@ footer div img {
   padding: 20px;
   margin: 10px 0px;
 }
-.segunda-parte div {
+.segunda-parte .fila {
   width: 45%;
   text-align: center;
 }
-.segunda-parte div img {
+.segunda-parte .fila .rotacion {
   height: 300px;
   width: auto;
   margin: 10px 10px;
+  transform: skew(10deg, 5deg);
 }
 .segunda-parte p {
   font-size: 2rem;
@@ -146,6 +148,7 @@ footer div img {
   height: 250px;
   width: auto;
   margin: 30px;
+  border: aqua solid 10px;
 }
 .contenedor-grid .grid-link {
   grid-area: link;
@@ -174,7 +177,8 @@ footer div img {
 }
 .contenedor-grid .grid-img2 {
   grid-area: img2;
-  padding: 20px;
+  margin: 20px;
+  border: aqua solid 10px;
 }
 .contenedor-grid .grid-titulo4 {
   grid-area: titulo4;
@@ -187,6 +191,7 @@ footer div img {
 }
 .contenedor-grid .grid-img3 {
   grid-area: img3;
+  border: aqua solid 10px;
 }
 .contenedor-grid .grid-titulo5 {
   grid-area: titulo5;
@@ -199,6 +204,7 @@ footer div img {
 }
 .contenedor-grid .grid-img4 {
   grid-area: img4;
+  border: aqua solid 10px;
 }
 
 /*main de juegos*/
@@ -224,14 +230,18 @@ footer div img {
 .contenedor2grid .grid-img1j {
   grid-area: img1j;
   padding: 10px;
+  border: aqua solid 10px;
+  margin: 20px;
 }
 .contenedor2grid .grid-img2j {
   grid-area: img2j;
   padding: 10px;
+  border: aqua solid 10px;
 }
 .contenedor2grid .grid-img3j {
   grid-area: img3j;
   padding: 10px;
+  border: aqua solid 10px;
 }
 .contenedor2grid .grid-texto2j {
   grid-area: texto2j;
